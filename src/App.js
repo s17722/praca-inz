@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header/Header';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import Projects from './pages/Projects';
+import MaterialCards from './pages/MaterialCards';
+import Contractors from './pages/Contractors';
+import Inspectors from './pages/Inspectors';
+import Engineers from './pages/Engineers';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/" exact></Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/material-cards">
+            <MaterialCards />
+          </Route>
+          <Route path="/contractors">
+            <Contractors />
+          </Route>
+          <Route path="/inspectors">
+            <Inspectors />
+          </Route>
+          <Route path="/engineers">
+            <Engineers />
+          </Route>
+          <Route path="*">404</Route>
+        </Switch>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
