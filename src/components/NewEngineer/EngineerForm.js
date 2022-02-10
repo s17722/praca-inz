@@ -36,6 +36,8 @@ const EngineerForm = (props) => {
     setEnteredSurname('');
     setEnteredPhone('');
     setEnteredMail('');
+    //closing the form
+    props.formActive();
   };
 
   return (
@@ -60,6 +62,9 @@ const EngineerForm = (props) => {
         <label htmlFor="">E-mail</label>
         <input type="text" value={enteredMail} onChange={mailChangeHandler} />
       </div>
+      <button type="button" onClick={props.formActive}>
+        Zamknij
+      </button>
       <button type="submit">Dodaj inżyniera</button>
     </form>
   );
