@@ -14,9 +14,9 @@ const App = () => {
         <Header />
         <Switch>
           <Route path="/" exact></Route>
-          <Route path="/projects">
+          {/* <Route path="/projects">
             <Projects />
-          </Route>
+          </Route> */}
           <Route path="/material-cards">
             <MaterialCards />
           </Route>

@@ -1,24 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navigation.css';
 
 const Navigation = () => {
   return (
-    <nav>
-      <ul>
-        <li>
+    <nav className="nav">
+      <ul className="nav-list">
+        {/* <li>
           <Link to="/projects">Projekty</Link>
+        </li> */}
+        <li className="nav-item">
+          <Link className="nav-link" to="/material-cards">
+            Karty materiałowe
+          </Link>
         </li>
-        <li>
-          <Link to="/material-cards">Karty materiałowe</Link>
+        <li className="nav-item">
+          <Link className="nav-link" to="/contractors">
+            Podwykonawcy
+          </Link>
         </li>
-        <li>
-          <Link to="/contractors">Podwykonawcy</Link>
+        <li className="nav-item">
+          <Link className="nav-link" to="/inspectors">
+            Inspektorzy
+          </Link>
         </li>
-        <li>
-          <Link to="/inspectors">Inspektorzy</Link>
-        </li>
-        <li>
-          <Link to="/engineers">Inżynierowie</Link>
+        <li className="nav-item">
+          <Link className="nav-link" to="/engineers">
+            Inżynierowie
+          </Link>
         </li>
       </ul>
     </nav>

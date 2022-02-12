@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import EngineersList from '../components/Engineers/EngineersList';
+import EngineerList from '../components/Engineers/EngineerList';
 import NewEngineer from '../components/NewEngineer/NewEngineer';
 
 const DUMMY_ENGINEERS = [
@@ -23,9 +23,9 @@ const Engineers = () => {
   };
 
   return (
-    <div className="Engineers">
+    <div className="engineers">
       <NewEngineer onAddEngineer={addEngineer} />
-      <EngineersList list={engineerList} />
+      <EngineerList list={engineerList} />
     </div>
   );
 };

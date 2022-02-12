@@ -1,7 +1,7 @@
 import React from 'react';
 import EngineerItem from './EngineerItem';
 
-const EngineersList = (props) => {
+const EngineerList = (props) => {
   return (
     <ul>
       {props.list.map((eng) => (
@@ -17,4 +17,4 @@ const EngineersList = (props) => {
   );
 };
 
-export default EngineersList;
+export default EngineerList;
