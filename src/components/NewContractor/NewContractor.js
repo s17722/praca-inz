@@ -20,7 +20,7 @@ const NewContractor = (props) => {
   };
 
   let addNewContractor = (
-    <button onClick={isContractorFormActiveHandler}>
+    <button className="add-new-item" onClick={isContractorFormActiveHandler}>
       Dodaj nowego podwykonawcę
     </button>
   );

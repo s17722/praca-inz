@@ -20,7 +20,9 @@ const NewEngineer = (props) => {
   };
 
   let addNewEngineer = (
-    <button onClick={isEngFormActiveHandler}>Dodaj nowego inżyniera</button>
+    <button className="add-new-item" onClick={isEngFormActiveHandler}>
+      Dodaj nowego inżyniera
+    </button>
   );
 
   if (formActive === true) {

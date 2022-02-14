@@ -12,25 +12,27 @@ const App = () => {
     <div className="App">
       <Router>
         <Header />
-        <Switch>
-          <Route path="/" exact></Route>
-          {/* <Route path="/projects">
+        <div className="wrapper">
+          <Switch>
+            <Route path="/" exact></Route>
+            {/* <Route path="/projects">
             <Projects />
           </Route> */}
-          <Route path="/material-cards">
-            <MaterialCards />
-          </Route>
-          <Route path="/contractors">
-            <Contractors />
-          </Route>
-          <Route path="/inspectors">
-            <Inspectors />
-          </Route>
-          <Route path="/engineers">
-            <Engineers />
-          </Route>
-          <Route path="*">404</Route>
-        </Switch>
+            <Route path="/material-cards">
+              <MaterialCards />
+            </Route>
+            <Route path="/contractors">
+              <Contractors />
+            </Route>
+            <Route path="/inspectors">
+              <Inspectors />
+            </Route>
+            <Route path="/engineers">
+              <Engineers />
+            </Route>
+            <Route path="*">404</Route>
+          </Switch>
+        </div>
       </Router>
     </div>
   );

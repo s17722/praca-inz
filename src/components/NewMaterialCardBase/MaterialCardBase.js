@@ -52,6 +52,7 @@ const MaterialCardBaseForm = (props) => {
 
   return (
     <form onSubmit={submitHandler}>
+      <h2>Wzór nowej karty materiałowej</h2>
       <div>
         <label htmlFor="">Nazwa projektu</label>
         <input
@@ -76,10 +77,12 @@ const MaterialCardBaseForm = (props) => {
           onChange={investorChangeHandler}
         />
       </div>
-      <button type="button" onClick={props.formActive}>
-        Zamknij
-      </button>
-      <button type="submit">Dodaj dane</button>
+      <div className="controls">
+        <button type="button" onClick={props.formActive}>
+          Zamknij
+        </button>
+        <button type="submit">Dodaj dane</button>
+      </div>
     </form>
   );
 };

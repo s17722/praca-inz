@@ -129,8 +129,14 @@ table {
 }
 
 /**
- *  my styles
+ *  general styles
  */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -148,4 +154,67 @@ button {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.wrapper {
+  max-width: 816px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/**
+ *  button
+ */
+
+button {
+  background-color: #bbb;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 8px;
+  margin-right: 12px;
+  cursor: pointer;
+  appearance: none;
+  border: 0;
+}
+
+.add-new-item {
+  margin-top: 32px;
+}
+
+/**
+ *  form and lists
+ */
+form,
+.list {
+  background-color: hsl(154, 30%, 95%);
+  box-shadow: 4px 4px 13px -6px rgba(66, 68, 90, 1);
+  margin-top: 40px;
+  padding: 16px 24px 24px;
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+input {
+  margin-bottom: 12px;
+  min-width: 60%;
+  height: 24px;
+  border: 2px solid #d1d1d1;
+}
+
+.controls {
+  margin-top: 32px;
 }

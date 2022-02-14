@@ -93,10 +93,12 @@ const ContractorForm = (props) => {
         <label htmlFor="">E-mail</label>
         <input type="text" value={enteredMail} onChange={mailChangeHandler} />
       </div>
-      <button type="button" onClick={props.formActive}>
-        Zamknij
-      </button>
-      <button type="submit">Dodaj podwykonawcę</button>
+      <div className="controls">
+        <button type="button" onClick={props.formActive}>
+          Zamknij
+        </button>
+        <button type="submit">Dodaj podwykonawcę</button>
+      </div>
     </form>
   );
 };

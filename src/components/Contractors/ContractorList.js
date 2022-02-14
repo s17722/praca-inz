@@ -3,7 +3,7 @@ import ContractorItem from './ContractorItem';
 
 const ContractorList = (props) => {
   return (
-    <ul>
+    <ul className="list">
       {props.list.map((con) => (
         <ContractorItem
           key={con.id}

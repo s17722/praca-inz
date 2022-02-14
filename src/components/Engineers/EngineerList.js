@@ -3,7 +3,7 @@ import EngineerItem from './EngineerItem';
 
 const EngineerList = (props) => {
   return (
-    <ul>
+    <ul className="list">
       {props.list.map((eng) => (
         <EngineerItem
           key={eng.id}
